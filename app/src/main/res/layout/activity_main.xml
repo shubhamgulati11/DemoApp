@@ -6,12 +6,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#26AE90"
     tools:context=".MainActivity">
 
     <EditText
         android:layout_marginTop="50dp"
         android:layout_width="260dp"
         android:hint="Name"
+        android:background="#ffffff"
         android:id="@+id/etName"
         android:layout_gravity="center"
         android:layout_height="40dp" />
@@ -21,6 +23,7 @@
         android:layout_height="40dp"
         android:hint="Email"
         android:id="@+id/etEmail"
+        android:background="#ffffff"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:inputType="textEmailAddress"
@@ -28,6 +31,7 @@
     <EditText
         android:layout_width="260dp"
         android:layout_height="40dp"
+        android:background="#ffffff"
         android:hint="Password"
         android:id="@+id/etPass"
         android:inputType="textPassword"

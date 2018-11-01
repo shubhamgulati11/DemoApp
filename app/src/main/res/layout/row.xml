@@ -6,7 +6,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:background="#f90909"
+        android:background="#1CE000"
         android:layout_height="wrap_content"
         android:id="@+id/tv"
         android:textSize="35sp"

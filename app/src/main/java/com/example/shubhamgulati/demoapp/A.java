@@ -1,6 +1,7 @@
 package com.example.shubhamgulati.demoapp;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -8,6 +9,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
@@ -18,8 +20,8 @@ import com.squareup.picasso.Picasso;
  */
 public class A extends Fragment {
 
+    Button btn;
 
-    ImageView iv;
     public A() {
         // Required empty public constructor
     }
@@ -35,7 +37,13 @@ public class A extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        iv=view.findViewById(R.id.iv);
-        Picasso.get().load(R.drawable.and).placeholder(R.drawable.ic_launcher_foreground).into(iv);
+        btn=view.findViewById(R.id.btn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(),Main2Activity.class);
+                startActivity(i);
+            }
+        });
     }
 }

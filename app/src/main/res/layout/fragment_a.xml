@@ -2,15 +2,18 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#CDFF00"
     android:layout_height="match_parent"
     tools:context=".A">
 
     <!-- TODO: Update blank fragment layout -->
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="550dp"
-        android:id="@+id/iv"
-        android:scaleType="centerInside"
-        />
 
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:text="More"
+        android:layout_gravity="center"
+        android:id="@+id/btn"
+        />
 </FrameLayout>
